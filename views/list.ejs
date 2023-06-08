@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To Do List</title>
+       
+    </head>
+    <body>
+        <h1><%= kindOfDay %></h1>
+
+        <ul>
+            <%for (var i=0; i<newListItems.length;i++){ %>
+                <li><%= newListItems[i]%></li>
+            <%}%>
+            
+        </ul>
+        <Form action="/" method="post">
+            <input type="text" name="newItem">
+            <button type="submit">Add task</button>
+        </Form>
+        
+
+
+     
+    </body>
+</html>
