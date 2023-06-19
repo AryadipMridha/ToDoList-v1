@@ -18,10 +18,10 @@ app.get("/", function(req,res){
         month: "long",
 
 
-    };
+};
     let day = today.toLocaleDateString("en-US",options)
 
-    res.render("list", {kindOfDay:day,newListItems:items})
+res.render("list", {kindOfDay:day,newListItems:items})
 
 }
 )
